@@ -18,7 +18,7 @@ export const signIn = async (email: string, password: string) => {
     const e = error as Error;
     return {
       success: false,
-      message: { message: e.message || "An unknown error occurred" },
+      message: e.message || "An unknown error occurred",
     };
   }
 };
